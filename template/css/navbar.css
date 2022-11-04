@@ -1,0 +1,143 @@
+.container-fluid
+{
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    background: #FACABC;
+    z-index:1;
+}
+    
+nav
+{
+
+    z-index: 9999;
+}
+/* Nav bar*/
+.container-fluid nav
+{
+    width: 100%;
+    height: 76px;
+    
+    
+    font-size: 48px;
+    padding-left: 7em; /* Centers "Home, About me, Socials, etc" text */
+}
+.container-fluid nav a
+{
+    text-align: center;
+    text-decoration: none;
+    color: #987b74;
+    padding-right: 100px;
+}
+.container-fluid nav ul
+{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    list-style-type: none;
+    transition: all 0.5s ease;
+}
+.container-fluid nav ul li
+{
+    width: 10%;
+    float: left;
+    text-align: center;
+    color: #987b74;
+    font-size: 41px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    position: sticky;
+    cursor: pointer;
+    top: 0;
+}
+.container-fluid nav ul li:hover
+{
+    color: #5E4C47;
+}   
+.container-fluid nav ul li ul.sub-nav 
+{
+    position: absolute;
+    background: white; /* Background of drop down */
+    width: 75%;
+    height: 110px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.14), -1px 0px 1px rgba(0,0,0,0.14);
+    top: 75px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.container-fluid nav ul li ul.sub-nav li
+{
+
+    font-size: 31px;
+    font-family: primer, "Times New Roman", sans-sarif;
+    width: 75%;
+}
+
+.container-fluid nav ul li:hover ul.sub-nav /* Drop down menu visibility */
+{
+    visibility: visible;
+    opacity: 75%;
+    margin-top: 2px;
+}
+.container-fluid li
+{
+    display: inline-block;
+}
+.container-fluid nav ul li ul.sub-nav a:hover
+{
+    color: #5E4C47;
+    transition: all 0.5s ease;
+}
+.container-fluid nav ul li ul.sub-nav a
+{
+    padding: 0;
+}
+main h2
+{
+    padding-right: 10em;
+    padding-left: 10em;
+}
+main .learn-more {
+  border-radius: 2px;
+  background-color: #FACABC;
+  border: none;
+  color: #987b74;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 275px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+font-family: primer, "Times New Roman", sans-sarif;
+}
+
+main .learn-more span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+main .learn-more span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+main .learn-more:hover span {
+  padding-right: 25px;
+}
+
+main .learn-more:hover span:after {
+  opacity: 1;
+  right: 0;
+}
